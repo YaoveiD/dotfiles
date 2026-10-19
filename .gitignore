@@ -9,3 +9,6 @@ zshrc
 setup.local.mk
 aerospace/*.lock
 aerospace/*.log
+.pi/
+pi/**/node_modules
+pi/**/*.log

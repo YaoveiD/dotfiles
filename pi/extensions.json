@@ -1,0 +1,21 @@
+{
+  "extensions": [
+    "ask-user-form.ts",
+    "btw.ts",
+    "files.ts",
+    "goal.ts",
+    "subagent.ts",
+    "todos.ts",
+    "unified-edit.ts",
+    "review.ts",
+    "no-sleep.ts",
+    "notify.ts",
+    "pi-fzf",
+    "session-breakdown.ts",
+    "sidecar-file-links.ts",
+    "speed-shortcut.ts",
+    "thinking-level-shortcuts.ts",
+    "toggle-skills",
+    "whimsical.ts"
+  ]
+}

@@ -34,6 +34,13 @@ Existing `~/.aerospace.toml` must not conflict with the managed configuration.
 Four general-purpose agent skills are included; see [skills/README.md](skills/README.md)
 for dependencies, source attribution and licenses. They are not auto-enabled.
 
+## Optional Pi extensions
+
+Reviewed sources for 17 personal Pi extensions are included under `pi/extensions/`.
+See [pi/README.md](pi/README.md) before enabling them. Pi settings, credentials,
+sessions and installed dependencies are not bundled. No extension is auto-enabled
+by the default `make setup`.
+
 ## Local settings
 
 Keep Git identity in `~/.gitconfig.local`:
