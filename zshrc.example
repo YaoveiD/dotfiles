@@ -1,0 +1,3 @@
+source "${${(%):-%N}:A:h}/zsh/interactive.zsh"
+[[ -r "${ZDOTDIR:-$HOME}/.zshrc.local" ]] && source "${ZDOTDIR:-$HOME}/.zshrc.local"
+return 0

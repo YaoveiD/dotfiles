@@ -1,0 +1,4 @@
+[core]
+    editor = /usr/bin/vim
+[include]
+    path = ~/.gitconfig.local

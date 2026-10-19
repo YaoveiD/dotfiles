@@ -1,0 +1,72 @@
+{
+  "suggest.noselect": true,
+  "coc.preferences.formatOnSave": false,
+  "inlayHint.enable": false,
+  "[css][markdown][rust]": {
+    "coc.preferences.formatOnSave": true
+  },
+  "python.formatting.provider": "darker",
+  "python.formatting.darkerPath": "darker",
+  "rust-analyzer.check.command": "clippy",
+  "rust-analyzer.checkOnSave": true,
+  "java.server.launchMode": "Hybrid",
+  "go.checkForUpdates": "disabled",
+  "prettier.statusItemText": "",
+  "diagnostic-languageserver.mergeConfig": true,
+  "diagnostic-languageserver.linters": {
+    "golangci-lint": {
+      "args": ["run", "--output.json.path=stdout", "--output.text.path=", "--show-stats=false"],
+      "debounce": 1000
+    },
+    "cppcheck": {
+      "command": "cppcheck",
+      "args": [
+        "--enable=warning,style,performance,portability",
+        "--suppress=missingIncludeSystem",
+        "--template={file}:{line}:{column}: {severity}: {message}",
+        "--quiet",
+        "--inline-suppr",
+        "%file"
+      ],
+      "debounce": 800,
+      "isStderr": true,
+      "isStdout": false,
+      "sourceName": "cppcheck",
+      "offsetLine": 0,
+      "offsetColumn": 0,
+      "formatPattern": [
+        "^[^:]+:(\\d+):(\\d+):\\s+([^:]+):\\s+(.+?)$",
+        {
+          "line": 1,
+          "column": 2,
+          "message": 4,
+          "security": 3
+        }
+      ],
+      "securities": {
+        "information": "info",
+        "portability": "warning",
+        "performance": "warning",
+        "style": "warning",
+        "warning": "warning",
+        "error": "error"
+      }
+    }
+  },
+  "diagnostic-languageserver.filetypes": {
+    "sh": "shellcheck",
+    "go": "golangci-lint",
+    "cpp": ["cpplint", "cppcheck"],
+    "cmake": "cmakelint"
+  },
+  "languageserver": {
+    "erlang": {
+      "command": "erlang_ls",
+      "filetypes": ["erlang"]
+    },
+    "scala": {
+      "command": "metals",
+      "filetypes": ["scala"]
+    }
+  }
+}

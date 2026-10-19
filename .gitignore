@@ -1,0 +1,9 @@
+.DS_Store
+__pycache__/
+*.pyc
+*.bak
+.env*
+node_modules/
+*.local
+zshrc
+setup.local.mk

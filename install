@@ -1,0 +1,6 @@
+#!/bin/sh
+# Compatibility entry point; all setup lives in Makefiles.
+set -eu
+root=$(CDPATH='' cd -- "$(dirname -- "$0")" && pwd -P)
+if [ "$#" -eq 0 ]; then set -- setup; fi
+exec make -C "$root" "$@"
