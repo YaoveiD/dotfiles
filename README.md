@@ -1,6 +1,6 @@
 # dotfiles
 
-Personal Vim, Neovim, tmux and Zsh configuration for macOS.
+Personal Vim, Neovim, tmux, Zsh and optional AeroSpace configuration for macOS.
 This is a reviewed snapshot with independent Git history.
 
 ## Install
@@ -23,6 +23,16 @@ Use `make setup-nvim` or `make -C setup/zimfw setup` for individual tools.
 
 See [docs/setup.md](docs/setup.md) for versions, opt-in JDK/Maven and editor extras.
 Local installation choices belong in ignored `setup.local.mk`.
+
+## Optional AeroSpace and skills
+
+Run `make setup-aerospace` to install AeroSpace and link its generic configuration.
+Alt+Enter opens Terminal; Alt+Shift+Semicolon enters service mode, then `b` toggles
+a bottom gap on the focused display. Grant macOS Accessibility permission manually.
+Existing `~/.aerospace.toml` must not conflict with the managed configuration.
+
+Four general-purpose agent skills are included; see [skills/README.md](skills/README.md)
+for dependencies, source attribution and licenses. They are not auto-enabled.
 
 ## Local settings
 

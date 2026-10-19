@@ -7,3 +7,5 @@ node_modules/
 *.local
 zshrc
 setup.local.mk
+aerospace/*.lock
+aerospace/*.log

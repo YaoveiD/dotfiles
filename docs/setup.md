@@ -30,6 +30,10 @@ Do not run separate setup processes concurrently.
 | `sdkman` | SDKMAN; optional explicitly selected JDK/Maven versions |
 | `nvim` | NVM/Node, Neovim, ripgrep, ctags, CMake, ShellCheck, cppcheck, Python, uv, vim-plug/plugins |
 | `tmux` | tmux, fzf, Python, TPM/plugins, `.tmux.conf` |
+| `aerospace` (optional) | AeroSpace cask, Python; `~/.config/aerospace` |
+
+Run `make setup-aerospace` explicitly; it is not in the default module list.
+Grant macOS Accessibility permission manually after installation.
 
 Additional modules may be available in a private checkout. They are not selected
 by default. Use `make -C setup/<tool> setup` for any available module.
